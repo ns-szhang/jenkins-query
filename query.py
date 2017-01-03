@@ -60,7 +60,7 @@ if __name__ == '__main__':
     matcher = re.compile(
         'GitHub pull request #(\d+) of commit ([0-9a-z]+),')
     error_matcher = re.compile(
-        'builder for ./opt/ns/nix/store/[a-z0-9]+-([a-z0-9\-]+).drv. failed')
+        'builder for ./opt/ns/nix/store/[a-z0-9]+-([a-z0-9\-\.]+).drv. failed')
 
     for job in range(first_build, last_build+1):
         if str(job) in cache:
